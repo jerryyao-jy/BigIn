@@ -26,6 +26,10 @@ public class HomeFragment extends Fragment implements OnCheckedChangeListener {
 	private SlidingMenu menu;
 	private RadioButton rb_home, rb_newsCenter, rb_govOffical, rb_smartService, rb_settings;
 
+	public HomeFragment() {
+		super();
+	}
+
 	public HomeFragment(SlidingMenu menu) {
 		this.menu = menu;
 	}
