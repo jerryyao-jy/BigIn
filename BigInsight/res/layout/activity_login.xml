@@ -131,14 +131,16 @@
             android:layout_weight="1"
             android:src="@drawable/qq" />
 
- <!--        <ImageView
+        <!--
+             <ImageView
             android:id="@+id/iv_xinlang"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:clickable="true"
-            android:src="@drawable/xinlang" /> -->
+            android:src="@drawable/xinlang" />
+        -->
 
         <com.sina.weibo.sdk.widget.LoginButton
             android:id="@+id/login_button_default"
@@ -155,5 +157,14 @@
             android:layout_weight="1"
             android:src="@drawable/weixin" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|bottom"
+        android:text="Token:" />
 
 </RelativeLayout>

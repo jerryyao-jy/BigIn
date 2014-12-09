@@ -16,10 +16,12 @@
         android:background="@drawable/tab_pics" />
 
     <TextView
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text="Pics"
+        android:textColor="@color/gray"
         android:textSize="25sp" />
 
 </LinearLayout>
