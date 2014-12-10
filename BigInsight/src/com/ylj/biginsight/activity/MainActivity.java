@@ -15,8 +15,6 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
-import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.onekeyshare.OnekeyShare;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
@@ -38,7 +36,7 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 
 		setBehindContentView(R.layout.activity_menu);
 		setContentView(R.layout.activity_main);
-		ShareSDK.initSDK(this);
+		//ShareSDK.initSDK(this);
 		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.layout_titlebar);
 		// init sliding menu
 		initMenu();
@@ -69,7 +67,7 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 					public boolean onMenuItemClick(MenuItem item) {
 						switch (item.getItemId()) {
 						case R.id.menu_share:
-							OnekeyShare oks = new OnekeyShare();
+/*							OnekeyShare oks = new OnekeyShare();
 							// 分享时 Notification 的图标和文字
 							oks.setNotification(R.drawable.biginsight, MainActivity.this.getString(R.string.app_name));
 							// address 是接收人地址，仅在信息和邮件使用
@@ -106,16 +104,16 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 							// 是否直接分享（ true 则直接分享）
 							oks.setSilent(true);
 							// 指定分享平台，和 slient 一起使用可以直接分享到指定的平台
-							/*
+							
 							 * if (platform != null) {
 							 * oks.setPlatform(platform); }
-							 */
+							 
 							// 去除注释可通过 OneKeyShareCallback 来捕获快捷分享的处理结果
 							// oks.setCallback(new OneKeyShareCallback());
 							// 通过 OneKeyShareCallback 来修改不同平台分享的内容
 							// oks.setShareContentCustomizeCallback(new
 							// ShareContentCustomizeDemo());
-							oks.show(MainActivity.this);
+							oks.show(MainActivity.this);*/
 							break;
 
 						case R.id.menu_login:
@@ -202,6 +200,6 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		ShareSDK.stopSDK(this);
+		//ShareSDK.stopSDK(this);
 	}
 }

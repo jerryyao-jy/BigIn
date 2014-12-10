@@ -42,11 +42,11 @@ public final class R {
 		public static final int indicator_right_padding = 0x7f050016;
 	}
 	public static final class drawable {
-		public static final int default_ptr_flip = 0x7f020065;
-		public static final int default_ptr_rotate = 0x7f020066;
-		public static final int indicator_arrow = 0x7f02008b;
-		public static final int indicator_bg_bottom = 0x7f02008c;
-		public static final int indicator_bg_top = 0x7f02008d;
+		public static final int default_ptr_flip = 0x7f020060;
+		public static final int default_ptr_rotate = 0x7f020061;
+		public static final int indicator_arrow = 0x7f020083;
+		public static final int indicator_bg_bottom = 0x7f020084;
+		public static final int indicator_bg_top = 0x7f020085;
 	}
 	public static final class id {
 		public static final int both = 0x7f09000d;
@@ -72,12 +72,12 @@ public final class R {
 		public static final int pull_to_refresh_header_vertical = 0x7f03003b;
 	}
 	public static final class string {
-		public static final int pull_to_refresh_from_bottom_pull_label = 0x7f060056;
-		public static final int pull_to_refresh_from_bottom_refreshing_label = 0x7f060058;
-		public static final int pull_to_refresh_from_bottom_release_label = 0x7f060057;
-		public static final int pull_to_refresh_pull_label = 0x7f060053;
-		public static final int pull_to_refresh_refreshing_label = 0x7f060055;
-		public static final int pull_to_refresh_release_label = 0x7f060054;
+		public static final int pull_to_refresh_from_bottom_pull_label = 0x7f060006;
+		public static final int pull_to_refresh_from_bottom_refreshing_label = 0x7f060008;
+		public static final int pull_to_refresh_from_bottom_release_label = 0x7f060007;
+		public static final int pull_to_refresh_pull_label = 0x7f060003;
+		public static final int pull_to_refresh_refreshing_label = 0x7f060005;
+		public static final int pull_to_refresh_release_label = 0x7f060004;
 	}
 	public static final class styleable {
 		public static final int[] PullToRefresh = { 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038, 0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e, 0x7f01003f };
