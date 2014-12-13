@@ -88,32 +88,6 @@ public class LoginActivity extends ActionBarActivity {
 				((LoginoutButton) mCurrentClickedButton).onActivityResult(requestCode, resultCode, data);
 			}
 		}
-
-		/*
-		 * if (mLoginBtnDefault != null) {
-		 * mLoginBtnDefault.onActivityResult(requestCode, resultCode, data); }
-		 */
-
-		/*
-		 * if (mLoginBtnStyle2 != null) {
-		 * mLoginBtnStyle2.onActivityResult(requestCode, resultCode, data); }
-		 */
-
-		/*
-		 * if (mLoginBtnStyle3 != null) {
-		 * mLoginBtnStyle3.onActivityResult(requestCode, resultCode, data); }
-		 */
-
-		/*
-		 * if (mLoginoutBtnDefault != null) {
-		 * mLoginoutBtnDefault.onActivityResult(requestCode, resultCode, data);
-		 * }
-		 */
-
-		/*
-		 * if (mLoginoutBtnSilver != null) {
-		 * mLoginoutBtnSilver.onActivityResult(requestCode, resultCode, data); }
-		 */
 	}
 
 	private OnClickListener mButtonClickListener = new OnClickListener() {
