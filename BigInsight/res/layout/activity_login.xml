@@ -8,7 +8,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/shape_login"
         android:orientation="horizontal" >
 
@@ -139,14 +139,13 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:clickable="true"
-            android:src="@drawable/xinlang" />
+            android:src="@drawable/xinlang" />
         -->
 
         <com.sina.weibo.sdk.widget.LoginButton
             android:id="@+id/login_button_default"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/com_sina_weibo_sdk_login_button_with_original_logo" />
+            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/iv_weixin"
@@ -158,13 +157,5 @@
             android:src="@drawable/weixin" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal|bottom"
-        android:text="Token:" />
 
 </RelativeLayout>

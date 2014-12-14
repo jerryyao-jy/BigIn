@@ -24,7 +24,7 @@ import com.ylj.biginsight.threepartlogin.Constants;
 public class LoginActivity extends ActionBarActivity {
 
 	private LoginButton mLoginBtnDefault;
-	private TextView mTokenView;
+	//private TextView mTokenView;
 	private AuthInfo authInfo;
 	private Button mCurrentClickedButton;
 
@@ -37,12 +37,13 @@ public class LoginActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
-		mTokenView = (TextView) findViewById(R.id.result);
+		//mTokenView = (TextView) findViewById(R.id.result);
 		
 		authInfo = new AuthInfo(this, Constants.APP_KEY, Constants.REDIRECT_URL, Constants.SCOPE);
 		mLoginBtnDefault = (LoginButton) findViewById(R.id.login_button_default);
 		mLoginBtnDefault.setWeiboAuthInfo(authInfo, new AuthListener()); // 为按钮设置授权认证信息
-		mLoginBtnDefault.setStyle(LoginButton.LOGIN_INCON_STYLE_3);
+		mLoginBtnDefault.setBackgroundResource(R.drawable.xinlang);
+		//mLoginBtnDefault.setStyle(LoginButton.LOGIN_INCON_STYLE_3);
 	}
 
 	/**
@@ -55,9 +56,11 @@ public class LoginActivity extends ActionBarActivity {
 			if (accessToken != null && accessToken.isSessionValid()) {
 				String date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new java.util.Date(accessToken.getExpiresTime()));
 				String format = getString(R.string.weibosdk_demo_token_to_string_format_1);
-				mTokenView.setText(String.format(format, accessToken.getToken(), date));
-
 				AccessTokenKeeper.writeAccessToken(getApplicationContext(), accessToken);
+				
+				Intent intent = new Intent(LoginActivity.this,LoginResultActivity.class);
+				intent.putExtra("token", String.format(format, accessToken.getToken(), date));
+				startActivity(intent);
 			}
 		}
 
