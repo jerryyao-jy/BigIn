@@ -2,13 +2,13 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -18,18 +18,18 @@
 
     <style name="MyActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
         <item name="android:background">#E80200</item>
- <!-- 标题栏颜色 -->
+        <!-- 标题栏颜色 -->
         <item name="android:backgroundStacked">#E80200</item>
- <!-- 导航栏颜色 -->
+        <!-- 导航栏颜色 -->
         <item name="android:backgroundSplit">#E80200</item>
- <!-- 底部操作栏颜色 -->
+        <!-- 底部操作栏颜色 -->
     </style>
 
     <!--
          Application theme.
     <style name="AppTheme" parent="AppBaseTheme">
         All customizations that are NOT specific to a particular API-level can go here.
-    </style>
+    </style>
     -->
 
     <style name="titleBar" parent="android:Theme.Holo.Light.DarkActionBar">
@@ -40,6 +40,11 @@
 
     <style name="CustomWindowTitleBackground">
         <item name="android:background">@drawable/titlebar_bg</item>
+    </style>
+
+    <style name="splashTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
     <!-- dialog -->

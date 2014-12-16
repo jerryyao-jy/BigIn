@@ -18,7 +18,11 @@
             android:label="@string/app_name"
             android:theme="@style/titleBar" >
         </activity>
-        <activity android:name=".SplashActivity" >
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation|"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,11 +32,13 @@
         <activity
             android:name=".NewsDetailActivity"
             android:icon="@drawable/tab_news"
-            android:parentActivityName=".MainActivity" android:label="@string/detail">
+            android:label="@string/detail"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:parentActivityName=".MainActivity" android:label="@string/login">
+            android:label="@string/login"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".LoginResultActivity"
@@ -81,14 +87,12 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
         </activity>
-        
-         <activity
+        <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-         
-                 <activity
+        <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
             android:noHistory="true" >
@@ -101,7 +105,6 @@
                 <data android:scheme="tencent1103584654" />
             </intent-filter>
         </activity>
-        
     </application>
 
     <!-- 用于调用 JNI -->

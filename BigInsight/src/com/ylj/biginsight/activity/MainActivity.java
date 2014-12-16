@@ -178,14 +178,13 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 
 	protected void backDialog() {
 		AlertDialog.Builder dialog = new Builder(MainActivity.this);
-		dialog.setMessage("Do you really want to sign out ?");
+		dialog.setMessage("Do you want to sign out now ?");
 		dialog.setTitle("Sign out");
 		dialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.dismiss();
 				finish();
-				// android.os.Process.killProcess(android.os.Process.myPid());
 			}
 		});
 		dialog.setNegativeButton("No", new DialogInterface.OnClickListener() {

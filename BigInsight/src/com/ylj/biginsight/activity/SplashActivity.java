@@ -18,7 +18,6 @@ public class SplashActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_splash);
-		
 		initAnimation();
 		
 		rl_splash = (RelativeLayout) findViewById(R.id.rl_splash);

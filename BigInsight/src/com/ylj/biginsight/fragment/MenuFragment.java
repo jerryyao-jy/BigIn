@@ -3,15 +3,20 @@ package com.ylj.biginsight.fragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.ylj.biginsight.activity.LoginActivity;
+import com.ylj.biginsight.activity.MainActivity;
 import com.ylj.biginsight.activity.R;
 import com.ylj.biginsight.adapter.MenuAdapter;
 
@@ -22,6 +27,8 @@ public class MenuFragment extends Fragment {
 	private List<View> pages;
 	private View view;
 	public static int cur_pos = 0;// 当前显示的一行
+	private ImageButton login;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,7 +37,7 @@ public class MenuFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		view = inflater.inflate(R.layout.fragment_menu, null);
-		lv_menu = (ListView) view.findViewById(R.id.lv_menu);
+
 		pages = new ArrayList<View>();
 		pages.add(inflater.inflate(R.layout.layout_tab_news, null));
 		pages.add(inflater.inflate(R.layout.layout_tab_focus, null));
@@ -41,6 +48,8 @@ public class MenuFragment extends Fragment {
 		pages.add(inflater.inflate(R.layout.layout_tab_ugc, null));
 		pages.add(inflater.inflate(R.layout.layout_tab_vote, null));
 		adapter = new MenuAdapter(getActivity(), pages);
+
+		lv_menu = (ListView) view.findViewById(R.id.lv_menu);
 		lv_menu.setAdapter(adapter);
 		lv_menu.setChoiceMode(ListView.CHOICE_MODE_SINGLE);// 一定要设置这个属性，否则ListView不会刷新
 		lv_menu.setOnItemClickListener(new OnItemClickListener() {
@@ -48,14 +57,23 @@ public class MenuFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				adapter.setSelectItem(position); // 记录当前选中的item
-				//adapter.notifyDataSetInvalidated();	//更新UI界面
+				// adapter.notifyDataSetInvalidated(); //更新UI界面
 			}
 		});
-		
+
+		login = (ImageButton) view.findViewById(R.id.login);
+		login.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getActivity(), LoginActivity.class);
+				startActivity(intent);
+			}
+		});
+
 		return view;
 	}
 
-	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
