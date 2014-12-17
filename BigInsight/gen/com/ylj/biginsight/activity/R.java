@@ -1852,38 +1852,39 @@ containing a value of this type.
         public static final int beginning=0x7f090026;
         public static final int both=0x7f09000d;
         public static final int bottom=0x7f090003;
-        public static final int btn_get_verify_code=0x7f09009a;
+        public static final int btn_get_verify_code=0x7f09009b;
         public static final int btn_login=0x7f090055;
-        public static final int btn_send_verify_code=0x7f09009c;
+        public static final int btn_send_verify_code=0x7f09009d;
         public static final int checkbox=0x7f090042;
         public static final int click_login=0x7f09006d;
         public static final int collapseActionView=0x7f090023;
         public static final int default_activity_button=0x7f09003d;
-        public static final int description=0x7f09007c;
+        public static final int description=0x7f09007d;
         public static final int dialog=0x7f090024;
-        public static final int dialog_btn_save=0x7f090087;
-        public static final int dialog_camera=0x7f090090;
-        public static final int dialog_ev_info=0x7f090088;
-        public static final int dialog_iv_boy=0x7f09008c;
-        public static final int dialog_iv_girl=0x7f09008f;
-        public static final int dialog_picture=0x7f090091;
-        public static final int dialog_tv_boy=0x7f09008b;
-        public static final int dialog_tv_girl=0x7f09008e;
-        public static final int dialog_tv_hint=0x7f090089;
-        public static final int dialog_tv_title=0x7f090086;
+        public static final int dialog_btn_save=0x7f090088;
+        public static final int dialog_camera=0x7f090091;
+        public static final int dialog_ev_info=0x7f090089;
+        public static final int dialog_iv_boy=0x7f09008d;
+        public static final int dialog_iv_girl=0x7f090090;
+        public static final int dialog_picture=0x7f090092;
+        public static final int dialog_tv_boy=0x7f09008c;
+        public static final int dialog_tv_girl=0x7f09008f;
+        public static final int dialog_tv_hint=0x7f09008a;
+        public static final int dialog_tv_title=0x7f090087;
         public static final int disableHome=0x7f09001e;
         public static final int disabled=0x7f09000a;
-        public static final int divide_line=0x7f09007a;
+        public static final int divide_line=0x7f09007b;
         public static final int dropdown=0x7f090025;
         public static final int edit_query=0x7f090045;
         public static final int end=0x7f090028;
-        public static final int et_phone=0x7f090099;
+        public static final int et_phone=0x7f09009a;
         public static final int et_username=0x7f090053;
-        public static final int et_verify_code=0x7f09009b;
+        public static final int et_verify_code=0x7f09009c;
         public static final int expand_activities_button=0x7f09003b;
         public static final int expanded_menu=0x7f090041;
         public static final int fl_buttom_tab=0x7f090064;
-        public static final int fl_inner=0x7f090080;
+        public static final int fl_inner=0x7f090081;
+        public static final int fl_origin=0x7f090073;
         public static final int flip=0x7f090012;
         public static final int fullscreen=0x7f090008;
         public static final int gov=0x7f090070;
@@ -1891,26 +1892,26 @@ containing a value of this type.
         public static final int home=0x7f090029;
         public static final int homeAsUp=0x7f09001b;
         public static final int home_viewPager=0x7f090071;
-        public static final int ib_menu=0x7f09007e;
+        public static final int ib_menu=0x7f09007f;
         public static final int icon=0x7f09003f;
         public static final int ifRoom=0x7f090020;
         public static final int image=0x7f09003c;
-        public static final int img_one=0x7f090079;
-        public static final int indicator=0x7f090073;
-        public static final int iv_comment=0x7f090078;
-        public static final int iv_image=0x7f090076;
-        public static final int iv_user_icon=0x7f0900a1;
+        public static final int img_one=0x7f09007a;
+        public static final int indicator=0x7f090074;
+        public static final int iv_comment=0x7f090079;
+        public static final int iv_image=0x7f090077;
+        public static final int iv_user_icon=0x7f0900a2;
         public static final int iv_weixin=0x7f09005a;
         public static final int left=0x7f090005;
         public static final int listMode=0x7f090017;
         public static final int list_item=0x7f09003e;
-        public static final int ll_back=0x7f0900a8;
+        public static final int ll_back=0x7f0900a9;
         public static final int ll_content=0x7f090060;
         public static final int ll_password=0x7f090054;
         public static final int ll_threePart=0x7f090056;
         public static final int ll_threePart_logo=0x7f090057;
-        public static final int ll_titleBar=0x7f09007d;
-        public static final int ll_title_bar=0x7f09009f;
+        public static final int ll_titleBar=0x7f09007e;
+        public static final int ll_title_bar=0x7f0900a0;
         public static final int ll_touxiang=0x7f09006b;
         public static final int ll_username=0x7f090051;
         public static final int login=0x7f09006c;
@@ -1918,14 +1919,14 @@ containing a value of this type.
         public static final int lv_menu=0x7f09006e;
         public static final int manualOnly=0x7f09000e;
         public static final int margin=0x7f090007;
-        public static final int menu=0x7f09007b;
-        public static final int menu_edit=0x7f0900ae;
-        public static final int menu_group=0x7f0900ac;
-        public static final int menu_login=0x7f0900aa;
-        public static final int menu_save=0x7f0900ad;
-        public static final int menu_share=0x7f0900ab;
+        public static final int menu=0x7f09007c;
+        public static final int menu_edit=0x7f0900af;
+        public static final int menu_group=0x7f0900ad;
+        public static final int menu_login=0x7f0900ab;
+        public static final int menu_save=0x7f0900ae;
+        public static final int menu_share=0x7f0900ac;
         public static final int middle=0x7f090027;
-        public static final int more=0x7f09007f;
+        public static final int more=0x7f090080;
         public static final int never=0x7f09001f;
         public static final int new_login_btn=0x7f090058;
         public static final int none=0x7f090000;
@@ -1936,10 +1937,10 @@ containing a value of this type.
         public static final int pullFromEnd=0x7f09000c;
         public static final int pullFromStart=0x7f09000b;
         public static final int pullUpFromBottom=0x7f090010;
-        public static final int pull_to_refresh_image=0x7f090081;
-        public static final int pull_to_refresh_progress=0x7f090082;
-        public static final int pull_to_refresh_sub_text=0x7f090084;
-        public static final int pull_to_refresh_text=0x7f090083;
+        public static final int pull_to_refresh_image=0x7f090082;
+        public static final int pull_to_refresh_progress=0x7f090083;
+        public static final int pull_to_refresh_sub_text=0x7f090085;
+        public static final int pull_to_refresh_text=0x7f090084;
         public static final int radio=0x7f090044;
         public static final int rb_govOffical=0x7f090068;
         public static final int rb_home=0x7f090066;
@@ -1950,13 +1951,13 @@ containing a value of this type.
         public static final int result=0x7f09005b;
         public static final int rg_tab=0x7f090065;
         public static final int right=0x7f090006;
-        public static final int rl_boy=0x7f09008a;
-        public static final int rl_content=0x7f090077;
-        public static final int rl_gender=0x7f0900a4;
-        public static final int rl_girl=0x7f09008d;
-        public static final int rl_icon=0x7f0900a0;
-        public static final int rl_name=0x7f0900a2;
-        public static final int rl_note=0x7f0900a6;
+        public static final int rl_boy=0x7f09008b;
+        public static final int rl_content=0x7f090078;
+        public static final int rl_gender=0x7f0900a5;
+        public static final int rl_girl=0x7f09008e;
+        public static final int rl_icon=0x7f0900a1;
+        public static final int rl_name=0x7f0900a3;
+        public static final int rl_note=0x7f0900a7;
         public static final int rl_splash=0x7f090062;
         public static final int rotate=0x7f090011;
         public static final int scrollview=0x7f090015;
@@ -1971,37 +1972,37 @@ containing a value of this type.
         public static final int search_src_text=0x7f09004c;
         public static final int search_voice_btn=0x7f090050;
         public static final int selected_view=0x7f090009;
-        public static final int settings=0x7f090075;
+        public static final int settings=0x7f090076;
         public static final int shortcut=0x7f090043;
         public static final int showCustom=0x7f09001d;
         public static final int showHome=0x7f09001a;
         public static final int showTitle=0x7f09001c;
-        public static final int slidingmenumain=0x7f090085;
-        public static final int smartservice=0x7f090074;
+        public static final int slidingmenumain=0x7f090086;
+        public static final int smartservice=0x7f090075;
         public static final int split_action_bar=0x7f090033;
         public static final int submit_area=0x7f09004e;
         public static final int sv_content=0x7f09005f;
         public static final int tabMode=0x7f090018;
-        public static final int textView1=0x7f090092;
+        public static final int textView1=0x7f090093;
         public static final int title=0x7f090040;
         public static final int top=0x7f090004;
         public static final int top_action_bar=0x7f090035;
         public static final int triangle=0x7f090001;
-        public static final int tvFacebook=0x7f09009d;
-        public static final int tvMsgRegister=0x7f090093;
-        public static final int tvOther=0x7f090098;
-        public static final int tvQq=0x7f090096;
-        public static final int tvTwitter=0x7f09009e;
-        public static final int tvWeibo=0x7f090095;
-        public static final int tvWeixin=0x7f090094;
+        public static final int tvFacebook=0x7f09009e;
+        public static final int tvMsgRegister=0x7f090094;
+        public static final int tvOther=0x7f090099;
+        public static final int tvQq=0x7f090097;
+        public static final int tvTwitter=0x7f09009f;
+        public static final int tvWeibo=0x7f090096;
+        public static final int tvWeixin=0x7f090095;
         public static final int tv_content=0x7f090061;
-        public static final int tv_ensure=0x7f0900a9;
-        public static final int tv_qq=0x7f090097;
+        public static final int tv_ensure=0x7f0900aa;
+        public static final int tv_qq=0x7f090098;
         public static final int tv_title=0x7f09005e;
         public static final int tv_toutiao=0x7f09006f;
-        public static final int tv_user_gender=0x7f0900a5;
-        public static final int tv_user_name=0x7f0900a3;
-        public static final int tv_user_note=0x7f0900a7;
+        public static final int tv_user_gender=0x7f0900a6;
+        public static final int tv_user_name=0x7f0900a4;
+        public static final int tv_user_note=0x7f0900a8;
         public static final int tv_username=0x7f090052;
         public static final int underline=0x7f090002;
         public static final int up=0x7f090036;
@@ -2325,7 +2326,6 @@ containing a value of this type.
 
 
 
-
         
          */
         public static final int AppBaseTheme=0x7f070000;
@@ -2552,12 +2552,18 @@ containing a value of this type.
         public static final int Widget_TabPageIndicator=0x7f070006;
         public static final int com_sina_weibo_sdk_loginview_default_style=0x7f070002;
         public static final int com_sina_weibo_sdk_loginview_silver_style=0x7f070003;
+        public static final int home_radioButton=0x7f07009b;
+        public static final int slidingMenu_item_textView=0x7f07009a;
         public static final int splashTheme=0x7f070097;
         /** 
          Application theme.
     <style name="AppTheme" parent="AppBaseTheme">
         All customizations that are NOT specific to a particular API-level can go here.
     </style>
+
+
+
+
 
 
     

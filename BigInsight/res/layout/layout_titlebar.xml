@@ -2,9 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/titlebar_bg"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
     tools:context="com.ylj.biginsight.activity.MainActivity" >
 
     <LinearLayout
@@ -28,19 +25,20 @@
             android:background="@drawable/top_bar_divider" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="3"
+            android:layout_weight="4"
+            android:gravity="center"
             android:text="@string/app_name"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
         <ImageButton
             android:id="@+id/more"
             style="@android:style/Widget.DeviceDefault.ActionButton.Overflow"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="right"
             android:layout_weight="1"
             android:contentDescription="@null" />
     </LinearLayout>

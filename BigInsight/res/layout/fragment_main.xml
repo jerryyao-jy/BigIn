@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.ylj.biginsight.activity.MainActivity" >
 
+    <!-- 最外层ViewPager -->
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
@@ -26,82 +27,37 @@
 
             <RadioButton
                 android:id="@+id/rb_home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:button="@null"
+                style="@style/home_radioButton"
                 android:drawableTop="@drawable/selector_tab_home"
-                android:ellipsize="marquee"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                android:text="Home"
-                android:textColor="@color/bottom_text_color"
-                android:textSize="13sp" >
+                android:text="Home" >
             </RadioButton>
 
             <RadioButton
                 android:id="@+id/rb_newsCenter"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:button="@null"
+                style="@style/home_radioButton"
                 android:drawableTop="@drawable/selector_tab_newscenter"
-                android:ellipsize="marquee"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                android:text="News Center"
-                android:textColor="@color/bottom_text_color"
-                android:textSize="13sp" >
+                android:text="News Center" >
             </RadioButton>
 
             <RadioButton
                 android:id="@+id/rb_govOffical"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:button="@null"
+                style="@style/home_radioButton"
                 android:drawableTop="@drawable/selector_tab_govoffical"
-                android:ellipsize="marquee"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                android:text="Gov Offical"
-                android:textColor="@color/bottom_text_color"
-                android:textSize="13sp" >
+                android:text="Gov Offical" >
             </RadioButton>
 
             <RadioButton
                 android:id="@+id/rb_smartService"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:button="@null"
+                style="@style/home_radioButton"
                 android:drawableTop="@drawable/selector_tab_smartservice"
-                android:ellipsize="marquee"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                android:text="Smart Service"
-                android:textColor="@color/bottom_text_color"
-                android:textSize="13sp" >
+                android:text="Smart Service" >
             </RadioButton>
 
             <RadioButton
                 android:id="@+id/rb_settings"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                android:button="@null"
+                style="@style/home_radioButton"
                 android:drawableTop="@drawable/selector_tab_settings"
-                android:ellipsize="marquee"
-                android:gravity="center_horizontal"
-                android:singleLine="true"
-                android:text="Settings"
-                android:textColor="@color/bottom_text_color"
-                android:textSize="13sp" >
+                android:text="Settings" >
             </RadioButton>
         </RadioGroup>
     </FrameLayout>
