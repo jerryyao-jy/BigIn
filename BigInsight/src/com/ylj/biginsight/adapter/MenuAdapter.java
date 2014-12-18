@@ -52,7 +52,7 @@ public class MenuAdapter extends BaseAdapter {
 		if (selectItem == position) {
 			view.setSelected(true);
 			view.setPressed(true);
-			view.setBackgroundResource(R.drawable.menu_item_bg_select);
+			view.setBackgroundResource(R.drawable.gap_line);
 			tv.setTextColor(context.getResources().getColor(R.color.menu_item_text_color));// 更改字体颜色
 		} else {
 			view.setSelected(false);

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -35,6 +36,7 @@ public class HomePageFragment extends Fragment {
 	private SlidingMenu menu;
 	private PullToRefreshListView refreshListView;
 	private HomeListViewAdapter listViewAdapter;
+	private ImageView dot_one,dot_two,dot_three,dot_four;
 	private int[] images = { R.drawable.listview_1, R.drawable.listview_2, R.drawable.listview_3, R.drawable.listview_4, R.drawable.listview_5, R.drawable.listview_6, R.drawable.listview_7 };
 
 	public HomePageFragment(SlidingMenu menu) {
@@ -49,6 +51,11 @@ public class HomePageFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_page_home, null);
+		dot_one = (ImageView) view.findViewById(R.id.dot_one);
+		dot_two = (ImageView) view.findViewById(R.id.dot_two);
+		dot_three = (ImageView) view.findViewById(R.id.dot_three);
+		dot_four = (ImageView) view.findViewById(R.id.dot_four);
+		
 		pages = new ArrayList<View>();
 		pages.add(inflater.inflate(R.layout.layout_page_sliding_one, null));
 		pages.add(inflater.inflate(R.layout.layout_page_sliding_two, null));
@@ -66,6 +73,36 @@ public class HomePageFragment extends Fragment {
 					menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 				} else {
 					menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+				}
+				
+				switch (position) {
+				case 0:
+					dot_one.setBackgroundResource(R.drawable.dot_focus);
+					dot_two.setBackgroundResource(R.drawable.dot_normal);
+					dot_three.setBackgroundResource(R.drawable.dot_normal);
+					dot_four.setBackgroundResource(R.drawable.dot_normal);
+					break;
+
+				case 1:
+					dot_one.setBackgroundResource(R.drawable.dot_normal);
+					dot_two.setBackgroundResource(R.drawable.dot_focus);
+					dot_three.setBackgroundResource(R.drawable.dot_normal);
+					dot_four.setBackgroundResource(R.drawable.dot_normal);
+					break;
+					
+				case 2:
+					dot_one.setBackgroundResource(R.drawable.dot_normal);
+					dot_two.setBackgroundResource(R.drawable.dot_normal);
+					dot_three.setBackgroundResource(R.drawable.dot_focus);
+					dot_four.setBackgroundResource(R.drawable.dot_normal);
+					break;
+					
+				case 3:
+					dot_one.setBackgroundResource(R.drawable.dot_normal);
+					dot_two.setBackgroundResource(R.drawable.dot_normal);
+					dot_three.setBackgroundResource(R.drawable.dot_normal);
+					dot_four.setBackgroundResource(R.drawable.dot_focus);
+					break;
 				}
 			}
 
