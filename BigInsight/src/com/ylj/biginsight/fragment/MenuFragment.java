@@ -3,6 +3,7 @@ package com.ylj.biginsight.fragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -22,12 +23,17 @@ import com.ylj.biginsight.adapter.MenuAdapter;
 
 public class MenuFragment extends Fragment {
 
+	private Activity mActivity;
 	private ListView lv_menu;
 	private MenuAdapter adapter;
 	private List<View> pages;
 	private View view;
 	public static int cur_pos = 0;// 当前显示的一行
 	private ImageButton login;
+
+	public MenuFragment(Activity mActivity) {
+		this.mActivity = mActivity;
+	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -39,14 +45,14 @@ public class MenuFragment extends Fragment {
 		view = inflater.inflate(R.layout.fragment_menu, null);
 
 		pages = new ArrayList<View>();
-		pages.add(inflater.inflate(R.layout.layout_tab_news, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_personcenter, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_mycollects, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_pics, null));
 		pages.add(inflater.inflate(R.layout.layout_tab_focus, null));
 		pages.add(inflater.inflate(R.layout.layout_tab_local, null));
-		pages.add(inflater.inflate(R.layout.layout_tab_pics, null));
-		pages.add(inflater.inflate(R.layout.layout_tab_read, null));
-		pages.add(inflater.inflate(R.layout.layout_tab_ties, null));
-		pages.add(inflater.inflate(R.layout.layout_tab_ugc, null));
-		pages.add(inflater.inflate(R.layout.layout_tab_vote, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_settings, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_updatecheck, null));
+		pages.add(inflater.inflate(R.layout.layout_tab_about, null));
 		adapter = new MenuAdapter(getActivity(), pages);
 
 		lv_menu = (ListView) view.findViewById(R.id.lv_menu);
@@ -57,7 +63,39 @@ public class MenuFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				adapter.setSelectItem(position); // 记录当前选中的item
-				// adapter.notifyDataSetInvalidated(); //更新UI界面
+
+				Fragment mFragment = null;
+				if(mActivity instanceof MainActivity){
+					switch (position) {
+					case 0:
+						mFragment = new NewsFragment();
+						break;
+
+					case 1:
+						mFragment = new FocusFragment();
+						break;
+						
+					case 2:
+						mFragment = new LocalFragment();
+						break;
+					case 3:
+						mFragment = new PicsFragment();
+						break;
+					case 4:
+						mFragment = new ReadFragment();
+						break;
+					case 5:
+						mFragment = new TiesFragment();
+						break;
+					case 6:
+						mFragment = new UgcFragment();
+						break;
+					case 7:
+						mFragment = new VoteFragment();
+						break;
+					}
+					((MainActivity) mActivity).switchContent(mFragment);
+				}
 			}
 		});
 

@@ -5,6 +5,7 @@ import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -44,7 +45,7 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 		initMore();
 
 		if (savedInstanceState == null) {
-			mMenuFragment = new MenuFragment();
+			mMenuFragment = new MenuFragment(this);
 			mHomeFragment = new HomeFragment(menu);
 			getSupportFragmentManager().beginTransaction().replace(R.id.activity_menu, mMenuFragment, "Menu").commit();
 			getSupportFragmentManager().beginTransaction().replace(R.id.activity_main, mHomeFragment, "Home").commit();
@@ -201,6 +202,13 @@ public class MainActivity extends SlidingFragmentActivity implements OnClickList
 				});
 			}
 		});
+	}
+
+	public void switchContent(Fragment mFragment) {
+		if (mFragment != null) {
+			getSupportFragmentManager().beginTransaction().replace(R.id.activity_main, mFragment).commit();
+			menu.toggle();
+		}
 	}
 
 	@Override

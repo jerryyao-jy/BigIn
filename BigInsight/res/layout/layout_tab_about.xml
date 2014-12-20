@@ -5,7 +5,6 @@
     android:layout_marginBottom="15dp"
     android:layout_marginLeft="10dp"
     android:gravity="center_vertical"
-    android:orientation="horizontal"
     tools:context="com.ylj.biginsight.activity.MainActivity" >
 
     <View
@@ -20,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/divide_line"
+        android:layout_centerVertical="true"
         android:orientation="horizontal" >
 
         <ImageView
@@ -27,12 +27,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:background="@drawable/tab_ugc" />
+            android:background="@drawable/about" />
 
         <TextView
             android:id="@+id/description"
             style="@style/slidingMenu_item_textView"
-            android:text="Ugc" />
+            android:text="关于" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -5,7 +5,6 @@
     android:layout_marginBottom="15dp"
     android:layout_marginLeft="10dp"
     android:gravity="center_vertical"
-    android:orientation="horizontal"
     tools:context="com.ylj.biginsight.activity.MainActivity" >
 
     <View
@@ -17,7 +16,7 @@
         android:background="@color/gray" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="match_parent" android:layout_centerVertical="true"
         android:layout_height="wrap_content"
         android:layout_below="@id/divide_line"
         android:orientation="horizontal" >
@@ -27,12 +26,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:background="@drawable/tab_pics" />
+            android:background="@drawable/tab_ugc" />
 
         <TextView
             android:id="@+id/description"
             style="@style/slidingMenu_item_textView"
-            android:text="Pics" />
+            android:text="我的评论" />
     </LinearLayout>
 
 </RelativeLayout>
